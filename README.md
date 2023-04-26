@@ -1,4 +1,4 @@
-# animated-Robot
+# Animated-Robot
 
 An animated robot written using html/css/ jQuery can follow your cursor with its eyes and react to page scrolling, clicking and hovering over it.
 
