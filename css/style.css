@@ -1,0 +1,191 @@
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.helper-bot {
+  bottom: 100px;
+  right: 45px;
+  animation: levitation 7s linear infinite;
+  -webkit-animation: levitation 7s linear infinite;
+}
+.helper-bot.jump-bot {
+  animation: jump 1s linear;
+  -webkit-animation: jump 1s linear;
+}
+.helper-bot__head {
+  width: 202px;
+  height: 158px;
+  margin-left: 13px;
+  display: flex;
+  justify-content: center;
+}
+.helper-bot__head-mouth {
+  top: 23%;
+  left: 39%;
+  transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -o-transform: scaleY(1);
+}
+.helper-bot__head-mouth.sad-mouth {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.helper-bot__head-chat {
+  background-color: white;
+  box-shadow: 0px 0px 40px rgba(54, 94, 125, 0.1);
+  padding: 12px;
+  border-radius: 10px;
+  right: 250px;
+  top: 80px;
+  width: max-content;
+  opacity: 0;
+  visibility: hidden;
+}
+.helper-bot__head-chat p {
+  max-width: 16ch;
+  text-align: center;
+  font-size: var(--text-14);
+  line-height: var(--lh-20);
+  font-weight: var(--fw-400);
+  color: var(--gray-900);
+}
+.helper-bot__head-chat.bot-say {
+  opacity: 1;
+  visibility: visible;
+}
+.helper-bot__head-eyes {
+  width: 150px;
+  height: 50px;
+  top: 40px;
+  left: 39px;
+}
+.helper-bot__head-eyes--left, .helper-bot__head-eyes--right {
+  top: 20%;
+  width: 44px;
+  height: 32px;
+  animation: blink 3s linear infinite;
+  -webkit-animation: blink 3s linear infinite;
+}
+.helper-bot__head-eyes--left {
+  left: 10%;
+}
+.helper-bot__head-eyes--right {
+  left: 60%;
+}
+.helper-bot__body {
+  position: relative;
+  z-index: 1;
+  width: 245px;
+  height: 289px;
+}
+.helper-bot__left-hand {
+  top: 34px;
+  left: -28px;
+  transform-origin: top;
+  width: 118px;
+  height: 134px;
+}
+.helper-bot__left-hand.animation-go {
+  animation: handUp 1.6s linear;
+  -webkit-animation: handUp 1.6s linear;
+}
+
+@keyframes handUp {
+  30% {
+    left: 5px;
+    transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+  }
+  45% {
+    left: 5px;
+    transform: rotate(80deg);
+    -webkit-transform: rotate(80deg);
+    -moz-transform: rotate(80deg);
+    -ms-transform: rotate(80deg);
+    -o-transform: rotate(80deg);
+  }
+  60% {
+    left: 5px;
+    transform: rotate(115deg);
+    -webkit-transform: rotate(115deg);
+    -moz-transform: rotate(115deg);
+    -ms-transform: rotate(115deg);
+    -o-transform: rotate(115deg);
+  }
+  75% {
+    left: 5px;
+    transform: rotate(69deg);
+    -webkit-transform: rotate(69deg);
+    -moz-transform: rotate(69deg);
+    -ms-transform: rotate(69deg);
+    -o-transform: rotate(69deg);
+  }
+}
+@keyframes jump {
+  10% {
+    transform: scaleY(1.05);
+  }
+  30% {
+    transform: scaleY(1);
+  }
+}
+@keyframes blink {
+  4% {
+    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+  }
+  8% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+  }
+}
+@keyframes levitation {
+  15% {
+    transform: translateY(2%);
+    -webkit-transform: translateY(2%);
+    -moz-transform: translateY(2%);
+    -ms-transform: translateY(2%);
+    -o-transform: translateY(2%);
+  }
+  40% {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+  }
+  65% {
+    transform: translateY(-1%);
+    -webkit-transform: translateY(-1%);
+    -moz-transform: translateY(-1%);
+    -ms-transform: translateY(-1%);
+    -o-transform: translateY(-1%);
+  }
+  90% {
+    transform: translateY(2%);
+    -webkit-transform: translateY(2%);
+    -moz-transform: translateY(2%);
+    -ms-transform: translateY(2%);
+    -o-transform: translateY(2%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
