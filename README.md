@@ -1,5 +1,5 @@
-# Animated robot
-<a href="https://viktorcoi.github.io/animated-robot/">Click here to view the git page online</a>
+# Animated robot | <a href="https://viktorcoi.github.io/animated-robot/">link to an online example</a>
+<a href="">Click here to view the git page online</a>
 An animated robot written using html / scss / jQuery can follow your cursor with its eyes and react to page scrolling, clicking and hovering over it.
 <br/>
 Online example: 
